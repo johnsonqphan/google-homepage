@@ -1,3 +1,44 @@
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline;
+  float: right;
+}
+
+ li a {
+   display: block;
+   padding: 8px;
+   margin: 4px;
+   font-size: 13px;
+   font-family: arial;
+   color: #000;
+   text-decoration: none;
+ }
+
+ #apps, #notifications, #avi {
+   position: relative;
+ }
+
+#apps{
+  width: 16px;
+  top: 2px;
+  opacity: 0.5;
+}
+
+#notifications {
+  width: 20px;
+  top: 0px;
+  opacity: 0.5;
+}
+
+#avi {
+  width: 32px;
+  border-radius: 50px;
+  top: -5px;
+}
+
 .main {
 position: relative;
 }
@@ -9,10 +50,74 @@ left: 50%;
 transform: translate(-50%, -57%)
 }
 
-.logo {
-width: 570px;
+
+.logo img {
+  display: block;
+  margin: auto;
+  width: 280px;
 }
 
 .searchfield{
+  width: 600px;
   text-align: center;
+}
+
+input {
+  font-size: 16px;
+  width: 100%;
+  padding: 12px;
+  margin: 25px 0;
+  border: 1px solid #e5e6e8;
+  border-radius: 2px;
+}
+
+.mic {
+  float: right;
+  position: relative;
+  top: -60px;
+  right: 10px;
+}
+
+.mic img {
+  width: 24px;
+}
+
+button {
+  padding: 10 16px;
+  margin: 0 2px;
+  font-family: arial;
+  font-size: 13px;
+  font-weight: 800;
+  color: grey;
+  border: 1px solid #f2f2f2;
+  border-radius: 2px;
+  background: #f2f2f2;
+}
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  line-height: 0px;
+  background-color: #f2f2f2;
+  border-top: 1px solid #d3d3d3;
+}
+
+footer .l-foot {
+  float: left;
+  margin-left: 17px;
+}
+
+footer .r-foot {
+  float: right;
+  margin-right: 15px;
+}
+
+footer a, footer a:link {
+  text-decoration: none;
+  margin: 13px;
+  font-family: arial;
+  font-size: 13px;
+  color: #666;
 }
